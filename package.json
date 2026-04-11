@@ -1,0 +1,39 @@
+{
+  "name": "uxbridge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "dev:web": "pnpm --filter @uxbridge/web dev",
+    "dev:api": "pnpm --filter @uxbridge/api dev",
+    "dev:plugin": "pnpm --filter @uxbridge/figma-plugin dev",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,css,md}\"",
+    "db:migrate": "pnpm --filter @uxbridge/db migrate",
+    "db:seed": "pnpm --filter @uxbridge/db seed",
+    "db:types": "supabase gen types typescript --local > packages/types/src/supabase.ts",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@uxbridge/config": "workspace:*",
+    "turbo": "^2.3.0",
+    "prettier": "^3.3.0",
+    "husky": "^9.1.0",
+    "lint-staged": "^15.2.0",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "typescript": "^5.5.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": ["eslint --fix", "prettier --write"],
+    "*.{json,css,md}": ["prettier --write"]
+  },
+  "packageManager": "pnpm@10.20.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}

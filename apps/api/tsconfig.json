@@ -1,0 +1,14 @@
+{
+  "extends": "@uxbridge/config/typescript/node",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist"
+  },
+  "references": [
+    { "path": "../../packages/types" },
+    { "path": "../../packages/db" },
+    { "path": "../../packages/token-pipeline" }
+  ],
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}

@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp .env.local apps/api/.env)",
+      "Bash(pnpm --filter @uxbridge/api dev)",
+      "Bash(curl -s http://localhost:3001/health)",
+      "Bash(node --input-type=module)",
+      "Bash(npx tsx:*)",
+      "Bash(./node_modules/.bin/tsx --version)",
+      "Bash(node_modules/.bin/tsx --eval \"import { getMappingsByProject } from '@uxbridge/db'; console.log\\('ok:', typeof getMappingsByProject\\);\")",
+      "Bash(timeout 10 node_modules/.bin/tsx src/index.ts)",
+      "Bash(python3 -m json.tool)",
+      "Read(//Users/royvillasana/Library/Application Support/Code/User/cs-script.user/**)",
+      "Bash(pnpm --version)",
+      "Bash(node_modules/.bin/next dev:*)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(pnpm add:*)",
+      "Bash(echo \"exit:$?\")",
+      "Bash(node_modules/.bin/tsx src/index.ts)",
+      "Bash(pnpm --filter @uxbridge/figma-plugin build)",
+      "Bash(curl -s 'https://fxlsfvpwctuygqqryejg.supabase.co/rest/v1/projects?select=id,name,github_repo,figma_file_key' -H 'apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ4bHNmdnB3Y3R1eWdxcXJ5ZWpnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTYwODE2NSwiZXhwIjoyMDkxMTg0MTY1fQ.eUFQTtNaOv8mY0w9f_n9hSEFQcffNgC8OCYvz2nD6jQ' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ4bHNmdnB3Y3R1eWdxcXJ5ZWpnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTYwODE2NSwiZXhwIjoyMDkxMTg0MTY1fQ.eUFQTtNaOv8mY0w9f_n9hSEFQcffNgC8OCYvz2nD6jQ')",
+      "Bash(curl -s 'https://fxlsfvpwctuygqqryejg.supabase.co/rest/v1/projects?select=*' -H 'apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ4bHNmdnB3Y3R1eWdxcXJ5ZWpnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTYwODE2NSwiZXhwIjoyMDkxMTg0MTY1fQ.eUFQTtNaOv8mY0w9f_n9hSEFQcffNgC8OCYvz2nD6jQ' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ4bHNmdnB3Y3R1eWdxcXJ5ZWpnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3NTYwODE2NSwiZXhwIjoyMDkxMTg0MTY1fQ.eUFQTtNaOv8mY0w9f_n9hSEFQcffNgC8OCYvz2nD6jQ')",
+      "Bash(curl -s \"http://localhost:3001/api/projects/2e990a4c-463d-41ba-905c-67198d0a9915\")",
+      "Bash(curl -s -X PATCH http://localhost:3001/api/projects/2e990a4c-463d-41ba-905c-67198d0a9915 -H 'Content-Type: application/json' -d '{\"github_repo\":\"royvillasana/FigmaSync\"}')"
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "UxBridge Sync",
+  "id": "uxbridge-sync-plugin",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "permissions": ["currentuser", "activeusers"],
+  "networkAccess": {
+    "allowedDomains": ["http://localhost:3001", "ws://localhost:3001"],
+    "devAllowedDomains": ["http://localhost:3001", "ws://localhost:3001"],
+    "reasoning": "Connects to local UxBridge backend for project listing and WebSocket sync"
+  },
+  "documentAccess": "dynamic-page",
+  "editorType": ["figma"]
+}

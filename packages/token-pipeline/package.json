@@ -1,0 +1,21 @@
+{
+  "name": "@uxbridge/token-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build:tokens": "tsx src/style-dictionary.ts"
+  },
+  "dependencies": {
+    "@uxbridge/types": "workspace:*",
+    "style-dictionary": "^4.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "tsx": "^4.19.0"
+  }
+}
